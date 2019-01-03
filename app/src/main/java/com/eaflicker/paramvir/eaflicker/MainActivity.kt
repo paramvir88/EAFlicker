@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.eaflicker.paramvir.eaflicker.network.FlickrService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         rv.layoutManager = layoutManager
         rv.adapter = RvAdapter(photos)
 
+
+        FlickrService().searchPhotos("android")
 
     }
 

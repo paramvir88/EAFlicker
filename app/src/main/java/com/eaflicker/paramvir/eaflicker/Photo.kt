@@ -17,11 +17,11 @@ package com.eaflicker.paramvir.eaflicker
  */
 data class Photo(var id: String) {
 
-    var owner: String
-    var secret: String
-    var title: String
-    var url_o: String
-    var height: String
-    var width: String
+    var owner: String = ""
+    var secret: String = ""
+    var title: String = ""
+    var url_o: String = ""
+    var height: String = ""
+    var width: String = ""
 
 }
