@@ -13,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_alignParentBottom="true"
             android:maxLines="2"
-            android:background="#6444"
+            android:background="#8444"
             android:text="paramvir"
             android:textColor="#fff"
             android:textStyle="bold"

@@ -20,7 +20,7 @@ public class FlickrService {
 
             @Override
             public void onFailure(Call<FlickrResponse> call, Throwable t) {
-
+                listener.onFailure("");
             }
         });
     }
