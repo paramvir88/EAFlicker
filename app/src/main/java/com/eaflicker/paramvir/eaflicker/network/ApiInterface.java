@@ -8,6 +8,6 @@ import retrofit2.http.Query;
 public interface ApiInterface {
 
     @NonNull
-    @GET("services/rest?method=flickr.photos.search&api_key=40540e709e2f4935c9450089926e2ac6&per_page=10&format=json&extras=url_o&nojsoncallback=1")
+    @GET("services/rest?method=flickr.photos.search&api_key=40540e709e2f4935c9450089926e2ac6&per_page=30&format=json&extras=url_o&nojsoncallback=1")
     Call<FlickrResponse> searchPhotos(@Query("text") String text);
 }
