@@ -1,5 +1,8 @@
 package com.eaflicker.paramvir.eaflicker
 
+import android.arch.persistence.room.Entity
+import android.arch.persistence.room.PrimaryKey
+
 
 /**
  * "id":"46529116962",
@@ -15,7 +18,9 @@ package com.eaflicker.paramvir.eaflicker
 "height_o":"349",
 "width_o":"884"
  */
-data class Photo(var id: String) {
+
+@Entity
+data class Photo(@PrimaryKey var id: String) {
 
     var owner: String = ""
     var secret: String = ""
