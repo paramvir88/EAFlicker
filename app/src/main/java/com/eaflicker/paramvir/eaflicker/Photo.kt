@@ -1,6 +1,7 @@
 package com.eaflicker.paramvir.eaflicker
 
 import android.arch.persistence.room.Entity
+import android.arch.persistence.room.ForeignKey
 import android.arch.persistence.room.PrimaryKey
 
 
@@ -22,11 +23,11 @@ import android.arch.persistence.room.PrimaryKey
 @Entity
 data class Photo(@PrimaryKey var id: String) {
 
-    var owner: String = ""
-    var secret: String = ""
-    var title: String = ""
-    var url_o: String = ""
-    var height: String = ""
-    var width: String = ""
+    var owner: String? = ""
+    var secret: String? = ""
+    var title: String? = ""
+    var url_o: String? = ""
+    var searchKey: String = ""
+
 
 }
