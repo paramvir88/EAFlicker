@@ -4,14 +4,19 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+
+ext.versionMajor = 1;
+ext.versionMinor = 4;
+ext.versionPatch = 0;
+ext.jenkinsBuildNumber = Integer.valueOf(System.env.BUILD_NUMBER ?:0)
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.eaflicker.paramvir.eaflicker"
         minSdkVersion 24
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode  computerVersionCode()
+        versionName computerVersionName()
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -24,6 +29,15 @@ android {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
     }
+}
+
+def computerVersionName(){
+
+    return "${versionMajor}.${versionMinor}.${versionPatch}"
+}
+
+def computerVersionCode(){
+    return (versionMajor * 100000) + (versionMinor * 10000) + (versionPatch * 1000) +jenkinsBuildNumber
 }
 
 dependencies {

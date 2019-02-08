@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="fileExclusions">
+      <list>
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/compat/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/drawerlayout/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/fragment/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/arch/persistence/room/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/constraint/R.java" />
+        <option value="FILE:app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/android/support/coordinatorlayout/R.java" />
+      </list>
+    </option>
+  </component>
+</project>
